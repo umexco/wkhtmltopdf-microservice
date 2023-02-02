@@ -1,7 +1,10 @@
 # wkhtmltopdf-microservice
 ### A simple wkhtmltopdf / wkhtmltoimage Docker microservice
 
-## Docker Image
+[![Docker Stars](https://img.shields.io/docker/stars/umex/wkhtmltopdf-microservice.svg)](https://hub.docker.com/r/umex/wkhtmltopdf-microservice/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/umex/wkhtmltopdf-microservice.svg)](https://hub.docker.com/r/umex/wkhtmltopdf-microservice/)
+
+## Docker image
 https://hub.docker.com/r/umex/wkhtmltopdf-microservice
 
 ```yaml
@@ -9,7 +12,7 @@ https://hub.docker.com/r/umex/wkhtmltopdf-microservice
 image: umex/wkhtmltopdf-microservice:1.0-alpine
 ```
 
-## Setup Docker Service
+## Docker service
 If you just use it internally within your Docker network, it is not required (and not recommendable) to expose the port.
 
 For example: Your service `any_backend` can make HTTP requests to `http://wkhtmltopdf:9100/pdf`.  
@@ -28,7 +31,7 @@ services:
       restart: unless-stopped
 ```
 
-## Service test page
+## Check service is running
 To test if the service is available, you can simply send a GET request to the service and should see a landing page.
 If you do this from your local browser, you need to expose the service port first.
 ```http request
