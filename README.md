@@ -44,8 +44,10 @@ GET http://wkhtmltopdf:9100
 POST http://localhost:9100/pdf
 POST http://wkhtmltopdf:9100/pdf
 ```
-Options: https://www.mankier.com/1/wkhtmltopdf
+PDF options: https://www.mankier.com/1/wkhtmltopdf
 ```json
+# JSON POST body
+   
 {
     "html": "<html><body><h1 style=\"color: red;\">HI I AM HERE</h1></body></html>",
     "wkConfig": {
@@ -68,8 +70,10 @@ Options: https://www.mankier.com/1/wkhtmltopdf
 POST http://localhost:9100/img
 POST http://wkhtmltopdf:9100/img
 ```
-Options: https://www.mankier.com/1/wkhtmltoimage
+Image options: https://www.mankier.com/1/wkhtmltoimage
 ```json
+# JSON POST body
+   
 {
    "html": "<html><body><h1 style=\"color: red;\">HI I AM HERE</h1></body></html>",
    "wkConfig": {
