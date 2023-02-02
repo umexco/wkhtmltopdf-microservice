@@ -1,5 +1,5 @@
 # wkhtmltopdf-microservice
-### A simple wkhtmltopdf / wkhtmltoimage Docker microservice
+### Easy Docker microservice for wkhtmltopdf and wkhtmltoimage
 
 [![Docker Stars](https://img.shields.io/docker/stars/umex/wkhtmltopdf-microservice.svg)](https://hub.docker.com/r/umex/wkhtmltopdf-microservice/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/umex/wkhtmltopdf-microservice.svg)](https://hub.docker.com/r/umex/wkhtmltopdf-microservice/)
