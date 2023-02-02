@@ -1,14 +1,17 @@
 # wkhtmltopdf-microservice
 ### Easy Docker microservice for wkhtmltopdf and wkhtmltoimage
 
+[![Issues](https://img.shields.io/github/issues/umexco/wkhtmltopdf-microservice.svg)](https://github.com/umexco/wkhtmltopdf-microservice)
+[![GitHub Stars](https://img.shields.io/github/stars/umexco/wkhtmltopdf-microservice.svg)](https://github.com/umexco/wkhtmltopdf-microservice)
 [![Docker Stars](https://img.shields.io/docker/stars/umex/wkhtmltopdf-microservice.svg)](https://hub.docker.com/r/umex/wkhtmltopdf-microservice/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/umex/wkhtmltopdf-microservice.svg)](https://hub.docker.com/r/umex/wkhtmltopdf-microservice/)
+[![MIT licensed](https://img.shields.io/github/license/umexco/wkhtmltopdf-microservice.svg)](https://github.com/umexco/wkhtmltopdf-microservice/blob/master/LICENSE)
 
 ## Docker image
 https://hub.docker.com/r/umex/wkhtmltopdf-microservice
 
 ```yaml
-# Check the latest image version at Docker Hub
+# Check the latest image version tag at Docker Hub
 image: umex/wkhtmltopdf-microservice:1.0-alpine
 ```
 
@@ -95,3 +98,6 @@ Image options: https://www.mankier.com/1/wkhtmltoimage
    }
 }
 ```
+
+## Open source
+https://github.com/umexco/wkhtmltopdf-microservice
