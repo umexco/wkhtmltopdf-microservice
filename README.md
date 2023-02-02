@@ -35,6 +35,13 @@ services:
          -  "9100:9100"
       restart: unless-stopped
 ```
+### Environment
+```yaml
+wkhtmltopdf:
+   environment:
+      # Default max body size
+      - MAX_BODY: '50mb' 
+```
 
 ## Check service is running
 To test if the service is available, you can simply send a GET request to the service and should see a landing page.
