@@ -13,6 +13,10 @@ image: umex/wkhtmltopdf-microservice:1.0-alpine
 ```
 
 ## Docker service
+```shell
+docker run -p 9100:9100 --name wkhtmltopdf umex/wkhtmltopdf-microservice:1.0-alpine 
+```
+
 If you just use it internally within your Docker network, it is not required (and not recommendable) to expose the port.
 
 For example: Your service `any_backend` can make HTTP requests to `http://wkhtmltopdf:9100/pdf`.  
