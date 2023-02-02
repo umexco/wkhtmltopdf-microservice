@@ -1,0 +1,15 @@
+version: '3'
+
+networks:
+   wkhtmltopdf_microservice:
+      external: false
+
+services:
+   wkhtmltopdf:
+      container_name: wkhtmltopdf_service
+      image: umex/wkhtmltopdf-microservice:1.0-alpine
+      ports:
+         -  "9100:9100"
+      restart: unless-stopped
+      networks:
+         - wkhtmltopdf_microservice

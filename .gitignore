@@ -1,0 +1,7 @@
+app/node_modules
+/vendor
+!.gitkeep
+/.idea
+/.vscode
+/.fleet
+app/dist
