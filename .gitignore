@@ -1,7 +1,7 @@
-app/node_modules
+node_modules
 /vendor
 !.gitkeep
 /.idea
 /.vscode
 /.fleet
-app/dist
+dist

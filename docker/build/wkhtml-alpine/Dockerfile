@@ -7,7 +7,7 @@ RUN apk add zip
 RUN apk add ttf-dejavu ttf-droid ttf-freefont ttf-liberation
 
 RUN mkdir /var/www
-COPY app /var/www/wkhtmltopdf-microservice
+COPY ./ /var/www/wkhtmltopdf-microservice
 
 WORKDIR /var/www/wkhtmltopdf-microservice
 RUN npm run build

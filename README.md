@@ -34,8 +34,6 @@ services:
    wkhtmltopdf:
       container_name: wkhtmltopdf_service
       image: umex/wkhtmltopdf-microservice:1.0-alpine
-      ports:
-         -  "9100:9100"
       restart: unless-stopped
 ```
 ### Environment
@@ -43,7 +41,9 @@ services:
 wkhtmltopdf:
    environment:
       # Default max body size
-      - MAX_BODY: '50mb' 
+      - MAX_BODY: '50mb'
+      # Max requests per minute
+      - MAX_REQUESTS: 100
 ```
 
 ## Check service is running

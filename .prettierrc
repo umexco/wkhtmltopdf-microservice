@@ -1,7 +1,7 @@
 {
-   "printWidth": 150,
+   "printWidth": 130,
    "tabWidth": 3,
    "singleQuote": true,
-   "phpVersion": "8.1",
-   "braceStyle": "1tbs"
+   "insertPragma": false,
+   "plugins": ["prettier-plugin-organize-imports"]
 }

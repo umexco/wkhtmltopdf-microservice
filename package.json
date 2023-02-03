@@ -3,10 +3,13 @@
    "author": "Jonas Gnioui <btxtiger@icloud.com>",
    "version": "1.0.0",
    "description": "",
-   "main": "index.js",
    "scripts": {
       "start": "node dist/index.js",
-      "build": "rimraf ./dist && tsc"
+      "build": "rimraf ./dist && tsc",
+      "build:image": "./docker/autobuild-image.sh",
+      "docker": "docker compose up",
+      "test": "npm run build:image && npm run docker",
+      "format-prettier": "prettier --write \"./src/**/*.{ts,scss,json}\""
    },
    "license": "MIT",
    "dependencies": {
@@ -14,9 +17,11 @@
       "dotenv": "^16.0.3",
       "express": "^4.18.2",
       "string-to-stream": "^3.0.1",
-      "wkhtmltox": "^1.1.5"
+      "wkhtmltox": "^1.1.5",
+      "express-rate-limit": "^6.7.0"
    },
    "devDependencies": {
+      "prettier-plugin-organize-imports": "^3.2.2",
       "@types/body-parser": "^1.19.2",
       "@types/express": "^4.17.16",
       "@types/node": "^18.11.18",

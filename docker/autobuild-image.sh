@@ -36,7 +36,8 @@ echo "============================"
 echo "IMAGE Version: $imageVersion"
 echo "Publish: $publish"
 
-cd ./build/wkhtmltopdf-microservice-alpine || $(printf "\n\n\n>>> ERROR: Wrong working directory!\n\n\n" && exit 1)
+cd ./docker/build/wkhtml-alpine || $(printf "\n\n\n>>> ERROR: Wrong working directory!\n\n\n" && exit 1)
+cd ../../..
 
 if [[ $publish = "YES" ]]; then
    printf "\n\n\n"
@@ -56,9 +57,7 @@ outputImages=()
 imageTag=umex/wkhtmltopdf-microservice:"${imageVersion}"-alpine
 printf "$(tput setaf 1)Tag: $imageTag$(tput sgr 0)\n\n"
 
-cd ../../../
-
-docker build -f ./docker/build/wkhtmltopdf-microservice-alpine/Dockerfile --tag "${imageTag}" .
+docker build -f ./docker/build/wkhtml-alpine/Dockerfile --tag "${imageTag}" .
 
 outputImages+=($imageTag)
 if [[ $publish = "YES" ]]; then
