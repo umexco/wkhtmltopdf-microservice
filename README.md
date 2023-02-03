@@ -41,9 +41,9 @@ services:
 wkhtmltopdf:
    environment:
       # Default max body size
-      - MAX_BODY: '50mb'
+      MAX_BODY: '50mb'
       # Max requests per minute
-      - MAX_REQUESTS: 100
+      MAX_REQUESTS: 100
 ```
 
 ## Check service is running
