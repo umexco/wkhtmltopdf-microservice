@@ -12,13 +12,13 @@ https://hub.docker.com/r/umex/wkhtmltopdf-microservice
 
 ```yaml
 # Check the latest image version tag at Docker Hub
-image: umex/wkhtmltopdf-microservice:1.0-alpine
+image: umex/wkhtmltopdf-microservice:1.1-alpine
 ```
 
 ## Docker service
 Quick test
 ```shell
-docker run -p 9100:9100 --name wkhtmltopdf umex/wkhtmltopdf-microservice:1.0-alpine 
+docker run -p 9100:9100 --name wkhtmltopdf umex/wkhtmltopdf-microservice:1.1-alpine 
 ```
 
 If you just use it internally within your Docker network, it is not required (and not recommendable) to expose the port.
@@ -33,7 +33,7 @@ services:
       
    wkhtmltopdf:
       container_name: wkhtmltopdf_service
-      image: umex/wkhtmltopdf-microservice:1.0-alpine
+      image: umex/wkhtmltopdf-microservice:1.1-alpine
       restart: unless-stopped
 ```
 ### Environment
