@@ -1,10 +1,10 @@
 # wkhtmltopdf-microservice
 ### Easy Docker microservice for wkhtmltopdf and wkhtmltoimage
 
-[![Issues](https://img.shields.io/github/issues/umexco/wkhtmltopdf-microservice.svg)](https://github.com/umexco/wkhtmltopdf-microservice)
 [![GitHub Stars](https://img.shields.io/github/stars/umexco/wkhtmltopdf-microservice.svg)](https://github.com/umexco/wkhtmltopdf-microservice)
-[![Docker Stars](https://img.shields.io/docker/stars/umex/wkhtmltopdf-microservice.svg)](https://hub.docker.com/r/umex/wkhtmltopdf-microservice/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/umex/wkhtmltopdf-microservice.svg)](https://hub.docker.com/r/umex/wkhtmltopdf-microservice/)
+[![Docker Stars](https://img.shields.io/docker/stars/umex/wkhtmltopdf-microservice.svg)](https://hub.docker.com/r/umex/wkhtmltopdf-microservice/)
+[![Issues](https://img.shields.io/github/issues/umexco/wkhtmltopdf-microservice.svg)](https://github.com/umexco/wkhtmltopdf-microservice)
 [![MIT licensed](https://img.shields.io/github/license/umexco/wkhtmltopdf-microservice.svg)](https://github.com/umexco/wkhtmltopdf-microservice/blob/master/LICENSE)
 
 ## Docker image
@@ -44,6 +44,7 @@ wkhtmltopdf:
       MAX_BODY: '50mb'
       # Max requests per minute
       MAX_REQUESTS: 100
+      NODE_PORT: 9100
 ```
 
 ## Check service is running

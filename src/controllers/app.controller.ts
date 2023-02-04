@@ -4,7 +4,7 @@ export class AppController {
    /**
     * Create Landing Page
     */
-   public createLandingPage(request: Request, response: Response): void {
+   public static getLandingPage(request: Request, response: Response): void {
       response.status(200).send(`
       <html lang='en'>
       <head>
