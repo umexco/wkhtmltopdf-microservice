@@ -1,5 +1,5 @@
 # wkhtmltopdf-microservice
-### Fast Docker microservice for wkhtmltopdf and wkhtmltoimage
+### Blazing fast Docker microservice for wkhtmltopdf and wkhtmltoimage
 
 [![GitHub Stars](https://img.shields.io/github/stars/umexco/wkhtmltopdf-microservice.svg)](https://github.com/umexco/wkhtmltopdf-microservice)
 [![Docker Pulls](https://img.shields.io/docker/pulls/umex/wkhtmltopdf-microservice.svg)](https://hub.docker.com/r/umex/wkhtmltopdf-microservice/)
