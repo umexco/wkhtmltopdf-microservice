@@ -1,7 +1,7 @@
 {
    "name": "wkhtmltopdf-microservice-app",
    "author": "Jonas Gnioui <btxtiger@icloud.com>",
-   "version": "1.0.0",
+   "version": "1.2.0",
    "description": "",
    "scripts": {
       "start": "node dist/index.js",
